@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Star Shop</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Star Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perguntas Frequentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entre em Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Ótima escolha!</h1>
+            <p class="lead">
+                Obrigado por comprar na Star Shop! Preencha seus dados para efetivar a
+                compra.
+            </p>
+        </div>
+    </header>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Sua compra</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail mb-3" />
+                        <dl>
+                            <dt>Produto</dt>
+                            <dd>Fuzzy Cardigan</dd>
+                            <dt>Cor</dt>
+                            <dd>Verde</dd>
+                            <dt>Tamanho</dt>
+                            <dd>40</dd>
+                            <dt>Preço</dt>
+                            <dd>R$129,90</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <form class="col-md-8">
+                <div class="row">
+                    <fieldset class="col-lg-6">
+                        <legend>Dados pessoais</legend>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required autofocus />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="email@exemplo.com" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                required />
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter"
+                                value="sim" checked />
+                            <label class="form-check-label" for="newsletter">
+                                Quero receber a newsletter Star Shop
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-lg-6">
+                        <legend>Cartão de Crédito</legend>
+                        <div class="mb-3">
+                            <label for="numero-cartao" class="form-label">Número do Cartão</label>
+                            <input type="text" class="form-control" id="numero-cartao" name="numero-cartao"
+                                placeholder="0000 0000 0000 0000" autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv" placeholder="123"
+                                autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="bandeira-cartao" class="form-label">Bandeira</label>
+                            <select class="form-select" id="bandeira-cartao">
+                                <option disabled selected>Selecione uma opção...</option>
+                                <option value="master">Mastercard</option>
+                                <option value="visa">Visa</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validade-cartao" class="form-label">Validade</label>
+                            <input type="month" class="form-control" id="validade-cartao" name="validade-cartao" />
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 w-100" aria-label="Confirmar Pedido">
+                    Confirmar Pedido
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+
+</html>
